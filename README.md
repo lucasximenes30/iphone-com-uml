@@ -14,36 +14,36 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 ```mermaid
 classDiagram
 direction TB
-    class Iphone {
+    class iphone.Iphone {
 	    - modelo: String
 	    - numeroSerie: String
     }
 
-    class NavegadorInternet {
+    class iphone.NavegadorInternet {
 	    + exibirPagina(String url) :void
 	    + adicionarNovaAba() : void
 	    + atualizarPagina() : void
     }
 
-    class ReprodutorMusical {
+    class iphone.ReprodutorMusical {
 	    + tocar() : void
 	    + pausar() : void
 	    + selecionarMusica(String musica) :void
     }
 
-    class AparelhoTelefonico {
+    class iphone.AparelhoTelefonico {
 	    + ligar(String numero) :void
 	    + atender() : void
 	    + atualizarPagina() : void
     }
 
-	<<Class>> Iphone
-	<<Interface>> NavegadorInternet
-	<<Interface>> ReprodutorMusical
-	<<Interface>> AparelhoTelefonico
+	<<Class>> iphone.Iphone
+	<<Interface>> iphone.NavegadorInternet
+	<<Interface>> iphone.ReprodutorMusical
+	<<Interface>> iphone.AparelhoTelefonico
 
-    Iphone <|-- ReprodutorMusical
-    Iphone <|-- NavegadorInternet
-    Iphone <|-- AparelhoTelefonico
+    iphone.Iphone <|-- iphone.ReprodutorMusical
+    iphone.Iphone <|-- iphone.NavegadorInternet
+    iphone.Iphone <|-- iphone.AparelhoTelefonico
 
 ```
