@@ -1,5 +1,3 @@
-package iphone;
-
 public interface ReprodutorMusical {
 
     public void tocar();

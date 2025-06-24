@@ -1,5 +1,3 @@
-package iphone;
-
 public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
     private String modelo;
